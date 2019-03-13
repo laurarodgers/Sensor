@@ -64,6 +64,7 @@ while(k<total_samples)
     %value=value';
     %data(:,:,k)=value;
     data=value(:,1:ground);
+    data=[data ; clock, 0, 0, 0, 0];
 
     k=k+1;
     
